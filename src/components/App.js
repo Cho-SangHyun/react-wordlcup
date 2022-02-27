@@ -20,12 +20,24 @@ function App(){
     const [selectIndex, setSelectIndex] = useState(0);
     // 사용자로부터 선택된 디저트들이 담기는 배열
     const [selectedList, setSelectedList] = useState([]);
+    // 현재 라운드에 대한 state
+    const [roundOf, setRoundOf] = useState(16)
 
     const selectDessert = (item) => {
         setSelectedList([...selectedList, item]);
         let nextSelectIndex = selectIndex + 2;
         setSelectIndex(nextSelectIndex);
     };
+
+    useEffect(() => {
+        if (selectIndex === roundOf){
+            setDessertList(selectedList);
+            setSelectedList([]);
+            setSelectIndex(0);
+            // parseInt : 몫만 취해준다.(소수점 밑 버리고 정수형 값만 취함)
+            setRoundOf(parseInt(roundOf / 2));
+        } 
+    }, [selectIndex]);
 
     useEffect(() => {
         shuffle(mock);
