@@ -13,4 +13,5 @@
 나중엔 API를 통해 외부에서 json을 받아와서 처리하는 식으로 바꾸고 싶음.
 
 ### 개발일지
-1. EP01 - 가장 먹고 싶은 디저트 16강 월드컵 웹 프로젝트를 시작하다  [https://jofestudio.tistory.com/32]
+1. EP01 - 가장 먹고 싶은 디저트 16강 월드컵 웹 프로젝트를 시작하다  [https://jofestudio.tistory.com/32]  
+2. EP02 - 순조로울 줄 알았던 항해의 첫 장애물 - missing dependency [https://jofestudio.tistory.com/35?category=989880]
