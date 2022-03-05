@@ -53,18 +53,28 @@ function App(){
         setDessertList(dessert_list);
     }, []);
 
-    return(
-        <div>
-            <div className="select-zone">
+    if(roundOf === 1){
+        return(
+            <div>
+                <h1>WINNER</h1>
                 {dessertList[selectIndex]}
-                <SelectButton item={dessertList[selectIndex]} onSelect={selectDessert}/>
-                {dessertList[selectIndex + 1]}
-                <SelectButton item={dessertList[selectIndex + 1]} onSelect={selectDessert}/>
-                <hr />
-                {selectedList}
             </div>
-        </div>
-    )
+        )
+    }
+    else{
+        return(
+            <div>
+                <h1>{roundOf}강</h1>
+                <div className="select-zone">
+                    {dessertList[selectIndex]}
+                    <SelectButton item={dessertList[selectIndex]} onSelect={selectDessert}/>
+                    {dessertList[selectIndex + 1]}
+                    <SelectButton item={dessertList[selectIndex + 1]} onSelect={selectDessert}/>
+                </div>
+            </div>
+        )
+    }
+    
 }
 
 export default App;
