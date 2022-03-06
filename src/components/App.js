@@ -59,7 +59,7 @@ function App(){
             <div>
                 <JofeStudioLogo />
                 <div className="main-section">
-                    <h1>WINNER</h1>
+                    <h1>YOUR BEST DESSERT</h1>
                     <div className="select-zone">
                         {dessertList[selectIndex]}
                     </div>
@@ -72,7 +72,8 @@ function App(){
             <div>
                 <JofeStudioLogo />
                 <div className="main-section">
-                    <h1>{roundOf}강</h1>
+                    {/* <h1>{roundOf}강</h1> */}
+                    <h1>{roundOf === 2 ? "결승전" : `${roundOf}강`}</h1>
                     <div className="select-zone">
                         <div className="select-item">
                             {dessertList[selectIndex]}
