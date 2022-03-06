@@ -1,3 +1,31 @@
-/* .select-zone{
+div.main-section{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+div.main-section h1{
+    margin-top: 0;
+    text-align: center;
+}
+
+div.select-zone{
     display: flex;
-} */
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+}
+
+div.select-zone li{
+    list-style: none;
+}
+
+
+div.versus{
+    display: flex;
+    align-items: center;
+    margin: 0 16px;
+
+    font-size: 2rem;
+}
