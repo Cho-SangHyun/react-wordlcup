@@ -16,3 +16,4 @@
 1. EP01 - 가장 먹고 싶은 디저트 16강 월드컵 웹 프로젝트를 시작하다  [https://jofestudio.tistory.com/32]  
 2. EP02 - 순조로울 줄 알았던 항해의 첫 장애물 - missing dependency [https://jofestudio.tistory.com/35?category=989880]
 3. EP03 - 너 분명 변했다면서. 근데 왜 그대로인건데! - 리액트의 setter함수는 비동기적으로 동작한다 [https://jofestudio.tistory.com/37]
+4. EP04 - 항상 볼 수 없는 사이 - 리액트에서의 조건부 렌더링 및 기본적인 css 작업 [https://jofestudio.tistory.com/39]
