@@ -3,4 +3,5 @@
     height: 225px;
     /* 이미지가 사이즈에 맞춰서 쏙 들어가는데 가로세로 비율을 맞춰서 들어가진다 */
     object-fit: cover;
+    border-radius: 10px;
 }
