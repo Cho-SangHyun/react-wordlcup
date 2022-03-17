@@ -3,7 +3,8 @@ import mock from "../mock.json";
 import DessertItem from "./DessertItem";
 import './App.css';
 import SelectButton from "./SelectButton";
-import JofeStudioLogo from "./JofeStudioLogo";
+import PageHeader from "./PageHeader";
+import PageFooter from "./PageFooter";
 
 // 피셔 - 예이츠 셔플(배열 섞는 알고리즘)
 function shuffle(array) {
@@ -56,24 +57,25 @@ function App(){
 
     if(roundOf === 1){
         return(
-            <div>
-                <JofeStudioLogo />
-                <div className="main-section">
-                    <h1>YOUR BEST DESSERT</h1>
+            <div className="app">
+                <PageHeader />
+                <section className="main-section">
+                    <header className="round-title">YOUR BEST DESSERT</header>
                     <div className="select-zone">
                         {dessertList[selectIndex]}
                     </div>
-                </div>
+                </section>
+                <PageFooter />
             </div>
         )
     }
     else{
         return(
-            <div>
-                <JofeStudioLogo />
-                <div className="main-section">
+            <div className="app">
+                <PageHeader />
+                <section className="main-section">
                     {/* <h1>{roundOf}강</h1> */}
-                    <h1>{roundOf === 2 ? "결 승 전" : `${roundOf}강`}</h1>
+                    <header className="round-title">{roundOf === 2 ? "결 승 전" : `${roundOf}강`}</header>
                     <div className="select-zone">
                         <div className="select-item">
                             {dessertList[selectIndex]}
@@ -87,7 +89,8 @@ function App(){
                             <SelectButton item={dessertList[selectIndex + 1]} onSelect={selectDessert}/>
                         </div>
                     </div>
-                </div>
+                </section>
+                <PageFooter />
             </div>
         )
     }
