@@ -71,13 +71,22 @@
     font-display: swap;
 }
 
+.app{
+    height: 100%;
+}
+
 *{
     font-family: 'SCoreDream';
+}
+
+.header{
+    height: 20%;
 }
 
 section.main-section{
     width: 1000px;
     margin: 0 auto;
+    height: 72.5%;
 }
 
 section.main-section .round-title{
@@ -108,4 +117,10 @@ div.versus{
     margin: 0 16px;
 
     font-size: 2rem;
+}
+
+.footer{
+    height: 7.5%;
+    border-top: 0.5px solid gray;
+    /* box-shadow: 0 0.66px rgb(197, 197, 197) inset; */
 }
